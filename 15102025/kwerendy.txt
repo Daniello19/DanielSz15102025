@@ -1,0 +1,10 @@
+KWERENDA 1:
+SELECT imie, pensja FROM pracownicy WHERE staz < 5;
+
+KWERENDA 2:
+SELECT stanowiska.nazwa, AVG(pracownicy.pensja) FROM stanowiska INNER JOIN pracownicy ON stanowiska.id = pracownicy.stanowiska_id WHERE pracownicy.stanowiska_id = stanowiska.id GROUP BY stanowiska.nazwa;
+
+KWERENDA 3:
+SELECT imie, nazwisko, MAX(pensja) FROM pracownicy;
+
+KWERENDA 4:
